@@ -1,0 +1,75 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.pfx
+*.p12
+credentials*.json
+secrets*.json
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.egg-info/
+
+# Local databases and backups
+*.dump
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+
+/backups/*
+!/backups/.gitkeep
+
+# User-uploaded media
+/media/*
+!/media/.gitkeep
+
+# Generated builds and releases
+/build/
+/dist/
+/release/
+/installer-output/
+*.exe
+*.msi
+*.msix
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+logs/
+
+# IDE settings
+.idea/
+.vscode/
+*.suo
+*.user
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local Docker overrides
+compose.override.yaml
+docker-compose.override.yml
